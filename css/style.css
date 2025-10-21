@@ -1,0 +1,297 @@
+/* นำเข้าฟอนต์ Krub Medium จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap');
+
+/* body {
+  background-color: #F7F5EE;
+} */
+
+
+
+body {
+  height: 100vh;
+  /* ให้เต็มจอ */
+  margin: 0;
+  background: linear-gradient(to top,
+      #F7F5EE 0%,
+      /* พื้นดินครีมอุ่นด้านล่าง */
+      #E6EEF0 100%
+      /* ท้องฟ้าฟ้าอ่อนด้านบน */
+    );
+  background-attachment: fixed;
+  /* ให้พื้นหลังอยู่กับที่ตอนเลื่อน */
+}
+
+/* แช่ navbar */
+.navbar-fixed {
+  position: fixed;
+  /* ให้ติดตำแหน่งบนจอ */
+  top: 0;
+  /* ชิดขอบบนสุดของหน้าจอ */
+  left: 0;
+  /* ชิดซ้ายสุด */
+  width: 100%;
+  /* ให้กว้างเต็มหน้าจอ */
+  z-index: 1000;
+  /* ให้อยู่เหนือ element อื่น */
+}
+
+/* สีNAVBAR */
+.custom-navbar {
+  background-color: #3B4235;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #E6C77B;
+}
+
+
+.center-vertical {
+  display: flex;
+  align-items: center;
+  /* จัดกลางแนวตั้ง (Y) */
+  justify-content: center;
+  /* จัดกลางแนวนอน (X) */
+  height: 30px;
+  /* ตั้งค่าความสูงของ div เพื่อให้เห็นผล */
+}
+
+
+/* สีกล่องรูป */
+.box-dark {
+  background-color: #262d22;
+  /* สีที่คุณต้องการ */
+  color: #f5f5f5;
+  /* สีข้อความ — ปรับถ้าต้องการ */
+  padding: 16px;
+  /* เว้นขอบภายในให้สวย */
+  border-radius: 8px;
+  /* มุมโค้ง เลือกเอาตามชอบ */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  /* เงาเล็กน้อย (ไม่จำเป็น) */
+  display: block;
+  /* หรือ inline-block ตามการใช้งาน */
+}
+
+
+/* class สำหรับเปลี่ยนสีขอบกล่อง */
+.box {
+  border: 4px solid #7E8836;
+  /* เขียวอมทอง เข้ากับธีม */
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  /* เงาเล็กน้อย (ไม่จำเป็น) */
+}
+
+/* ย่อหน้า */
+.indented {
+  text-indent: 40px;
+  /* ย่อบรรทัดแรก 40px */
+}
+
+
+/* ตั้งค่าฟอนต์หลัก */
+.font-krub-medium {
+  font-family: 'Krub', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.3;
+  /* ระยะห่างบรรทัดให้อ่านง่าย */
+}
+
+/* ปรับขนาดอัตโนมัติเมื่อหน้าจอแคบลง
+@media (max-width: 1024px) {
+  .font-krub-medium {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .font-krub-medium {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 480px) {
+  .font-krub-medium {
+    font-size: 18px;
+  }
+} */
+
+
+/* ===== ฟอนต์ Krub Medium 500 30px ===== */
+.text-krub-md {
+  font-family: 'Krub', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+/* ===== Responsive: ปรับขนาดตามหน้าจอ =====
+@media (max-width: 1024px) {
+  .text-krub-md {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-krub-md {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-krub-md {
+    font-size: 18px;
+  }
+} */
+
+
+/* ===== ฟอนต์ Krub Medium 500 ขนาด 20px ===== */
+.font-krub-20 {
+  font-family: 'Krub', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+/* ===== Responsive: ปรับขนาดตามหน้าจอ =====
+@media (max-width: 1024px) {
+  .font-krub-20 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .font-krub-20 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .font-krub-20 {
+    font-size: 14px;
+  }
+} */
+
+/* ===== ฟอนต์ Thasadith Regular 400 ขนาด 18px ===== */
+.font-thasadith-art {
+  font-family: 'Thasadith', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ===== Responsive: ปรับขนาดอัตโนมัติเมื่อหน้าจอเล็ก =====
+@media (max-width: 1024px) {
+  .font-thasadith-16 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .font-thasadith-16 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .font-thasadith-16 {
+    font-size: 15px;
+  }
+} */
+
+
+/* ห่างบน */
+.margin-y-clamp {
+  margin-top: clamp(30px, 5vw, 300px);
+  margin-bottom: clamp(30px, 5vw, 70px);
+  /* padding-top: 100px; */
+}
+
+.text-highlight {
+  font-family: 'Mali', cursive;
+  font-weight: 600;
+  font-size: 45px;
+  /* ขนาดใหญ่ขึ้นเล็กน้อย */
+  line-height: 1;
+  /* ควบคุม baseline ให้ไม่ขยับ */
+  display: inline-block;
+  vertical-align: baseline;
+  /* ให้ชิดเส้นฐานของประโยคเดิม */
+}
+
+/* ===== Responsive: ปรับขนาดอัตโนมัติเมื่อหน้าจอเล็กลง =====
+@media (max-width: 1024px) {
+  .text-highlight {
+    font-size: 37px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-highlight {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-highlight {
+    font-size: 29px;
+  }
+} */
+
+
+/* ===== Class สำหรับยึด baseline ===== */
+.text-baseline {
+  display: inline-block;
+  vertical-align: baseline;
+  /* ยึดเส้นฐานเดียวกับข้อความรอบข้าง */
+  line-height: 1;
+  /* ป้องกันการลอยหรือจมจาก line-height ต่างกัน */
+  position: relative;
+  /* เพื่อให้สามารถจูนตำแหน่งได้ถ้าจำเป็น */
+}
+
+
+/* สีตนส */
+.highlight-dream {
+  color: #E6C77B;
+  /* สีพีชอบอุ่น */
+}
+
+.highlight-imagine {
+  color: #C4A7E7;
+  /* สีม่วงลาเวนเดอร์ */
+}
+
+.color-text {
+  color: #2E352A;
+  /* สีม่วงลาเวนเดอร์ */
+}
+
+.nav-text-white {
+  color: #ffffff;
+}
+
+.nav-text-white:hover {
+  color: #E6C77B;
+}
+
+.top {
+   margin-top: 95px;
+}
+
+
+.cite {
+  color: rgb(78, 76, 76);
+  font-size: 14px
+}
