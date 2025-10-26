@@ -9,18 +9,27 @@
 
 
 
+/* body {
+  height: 100vh; */
+/* ให้เต็มจอ */
+/* margin: 0;
+  background: linear-gradient(to top,
+      #F7F5EE 0%, */
+/* พื้นดินครีมอุ่นด้านล่าง */
+/* #E6EEF0 100% */
+/* ท้องฟ้าฟ้าอ่อนด้านบน */
+/* );
+  background-attachment: fixed; */
+/* ให้พื้นหลังอยู่กับที่ตอนเลื่อน */
+/* } */
+
 body {
   height: 100vh;
-  /* ให้เต็มจอ */
   margin: 0;
-  background: linear-gradient(to top,
-      #F7F5EE 0%,
-      /* พื้นดินครีมอุ่นด้านล่าง */
-      #E6EEF0 100%
-      /* ท้องฟ้าฟ้าอ่อนด้านบน */
-    );
+  background: linear-gradient(to top, #F7F5EE 0%, #E6EEF0 100%);
   background-attachment: fixed;
-  /* ให้พื้นหลังอยู่กับที่ตอนเลื่อน */
+  transition: background 1.2s ease;
+  /* ไล่สีเนียนนุ่ม */
 }
 
 /* แช่ navbar */
@@ -90,6 +99,29 @@ body {
   background-color: #ffffff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
   /* เงาเล็กน้อย (ไม่จำเป็น) */
+}
+
+.title-icon {
+  display: inline-flex;
+  align-items: baseline;
+  /* จัดให้รูปอยู่ระดับเดียวกับตัวอักษร */
+  gap: 10px;
+  /* ระยะห่างระหว่างรูปกับข้อความ */
+  margin-bottom: 1rem;
+  /* เหมือนเดิม ไม่ขยับ p ด้านล่าง */
+}
+
+.icon-inline {
+  width: 1.4em;
+  height: auto;
+  vertical-align: middle;
+  transform: translateY(3px);
+  /* ปรับเล็กน้อยให้พอดีกับ baseline */
+}
+
+/* ปรับ h2 ไม่ให้ margin ดัน p ด้านล่างมากเกิน */
+.title-with-icon h2 {
+  margin-bottom: 0.3em;
 }
 
 /* ย่อหน้า */
@@ -287,11 +319,22 @@ body {
 }
 
 .top {
-   margin-top: 95px;
+  margin-top: 95px;
 }
 
 
 .cite {
   color: rgb(78, 76, 76);
   font-size: 14px
+}
+
+
+/* ทำให้ขีดสามขีใน navbar เป็นสีขาว */
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ให้ขอบปุ่มเป็นสีขาวด้วย */
+.custom-navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
 }
